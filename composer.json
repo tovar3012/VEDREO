@@ -1,0 +1,10 @@
+{
+    "require": {
+        "ecoal95/php-router": "dev-master",
+        "league/plates": "3.*",
+        "php-activerecord/php-activerecord": "^1.1"
+    },
+    "autoload": {
+        "App\\": "app/"
+    }
+}
