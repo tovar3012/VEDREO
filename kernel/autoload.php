@@ -54,4 +54,16 @@
 		require_once($class);
 	}
 
+	/*
+    |--------------------------------------------------------------------------
+    | ErrorHandler
+    |--------------------------------------------------------------------------
+    |
+    | URL info: http://php.net/manual/es/function.set-error-handler.php
+    |
+    */
+	
+	require ROOT.'\kernel\Libs\ErrorHandler.php';;
+	 
+
 ?>

@@ -2,8 +2,8 @@
 	
 	namespace kernel\Libs;
 
-	use App\Libs\Alerts AS Alerta;
-	use App\Libs\Redirec AS Redirec;
+	use kernel\Libs\Alerts AS Alerta;
+	use kernel\Libs\Redirec AS Redirec;
 
 	class Middleware{
 

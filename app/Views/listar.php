@@ -57,7 +57,7 @@
     
     <!-- DataTables -->
     <script type="text/javascript" src="<?= $this->e( $this->js('jquery.dataTables.js') ) ?>"></script>
-
+    
     <script>
     	$(document).on("ready", function(){
        		$('#tabla').DataTable();
