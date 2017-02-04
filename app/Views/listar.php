@@ -1,8 +1,8 @@
 <?php $this->layout('template', ['titulo' => 'VEDREO']) ?>
 
 <?php $this->start('styles') ?>
-    <link rel="stylesheet" href="<?= $this->e($this->css('jquery.dataTables.css')) ?>">
-    <link rel="stylesheet" href="<?= $this->e($this->css('font-awesome/css/font-awesome.min.css')) ?>">
+    <link rel="stylesheet" href="<?= $this->css('jquery.dataTables.css') ?>">
+    <link rel="stylesheet" href="<?= $this->css('font-awesome/css/font-awesome.min.css') ?>">
 <?php $this->stop() ?>
 
 <?php $this->start('name-proyect') ?>
@@ -35,8 +35,8 @@
                 <th> <?= $value->updated_at ?> </th>
                 <th>
                     <div class="btn-group">
-                        <a class="btn btn-warning" href="<?= $this->e( $this->route('/edit/'.$value->id) ) ?>"><i class="fa fa-edit"></i></a>
-                        <a class="btn btn-danger" href="<?= $this->e( $this->route('/delete/'.$value->id) ) ?>"><i class="fa fa-close"></i></a>
+                        <a class="btn btn-warning" href="<?= $this->route('/edit/'.$value->id) ?>"><i class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger" href="<?= $this->route('/delete/'.$value->id) ?>"><i class="fa fa-close"></i></a>
                     </div> 
                 </th>
             </tr>
@@ -50,13 +50,13 @@
 <?php $this->start('js') ?>
     
     <!-- JQuery -->
-    <script type="text/javascript" src="<?= $this->e( $this->js('jquery-1.12.4.min.js') ) ?>" ></script>
-
+    <script type="text/javascript" src="<?= $this->js('jquery-1.12.4.min.js') ?>" ></script>
+    
     <!-- Bootstrap JS -->
-    <script type="text/javascript" src="<?= $this->e( $this->js('bootstrap.min.js') ) ?>" ></script>
+    <script type="text/javascript" src="<?= $this->js('bootstrap.min.js') ?>" ></script>
     
     <!-- DataTables -->
-    <script type="text/javascript" src="<?= $this->e( $this->js('jquery.dataTables.js') ) ?>"></script>
+    <script type="text/javascript" src="<?= $this->js('jquery.dataTables.js') ?>"></script>
     
     <script>
     	$(document).on("ready", function(){

@@ -6,7 +6,7 @@
 
 <?php $this->start('contenido') ?>
     
-    <form class="form-horizontal" method="POST" action="<?= $this->e( $this->route('/save') ) ?>">
+    <form class="form-horizontal" method="POST" action="<?= $this->route('/save') ?>">
       
       <div class="form-group">
         <label class="control-label col-sm-2">Nombre</label>
@@ -37,3 +37,4 @@
     </form>
 
 <?php $this->stop() ?>
+

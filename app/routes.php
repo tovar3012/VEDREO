@@ -8,6 +8,7 @@
 	*/
 
 	$router->get('/', function(){
+
 		App\Controller\UserController::index();
 	});
 

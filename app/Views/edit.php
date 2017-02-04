@@ -6,7 +6,7 @@
 
 <?php $this->start('contenido') ?>
     
-    <form class="form-horizontal" method="POST" action="<?= $this->e( $this->route('/update/'.$id) ) ?>">
+    <form class="form-horizontal" method="POST" action="<?= $this->route('/update/'.$id) ?>">
       
       <div class="form-group">
         <label class="control-label col-sm-2">Nombre</label>

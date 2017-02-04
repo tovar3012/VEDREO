@@ -13,26 +13,16 @@
 
 	use League\Plates\Engine AS Plates;
 	
+	use kernel\Libs\TokenCSRF AS Token;
+
+	use kernel\PlatesExtension\AssetVedreo AS AssetVedreo;
+
 	class Controller{
 		
 		private static function config_view(){
 			$view = new Plates(ROOT_VIEWS);
-		
-			$view->registerFunction('css', function($string) {
-			    return '/'.FOLDER.'/public/css/'.$string;
-			});
-
-			$view->registerFunction('js', function($string) {
-			    return '/'.FOLDER.'/public/js/'.$string;
-			});
-
-			$view->registerFunction('route', function($string) {
-			    return $GLOBALS['router']->url($string);
-			});
-
-			$view->registerFunction('img', function($string) {
-			    return '/'.FOLDER.'/public/img/'.$string;
-			});
+			
+			$view->loadExtension(new AssetVedreo() );
 
 			return $view;
 		}
