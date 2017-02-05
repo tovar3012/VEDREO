@@ -1,6 +1,6 @@
 <?php 
 	
-	namespace App\Controller;
+	namespace kernel\Controller;
 	
 	use kernel\Controller\Controller AS Controller;
 

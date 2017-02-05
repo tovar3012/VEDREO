@@ -51,8 +51,11 @@
 		public static function delete($id){
 			User::eliminar($id);
 			Alerta::show('¡ Eliminado Correctamente !');
-			Redirec::redirec('listar'); 
-			
+			Redirec::redirec('listar'); 	
+		}
+
+		public static function login(){
+			Controller::render('auth/login');
 		}
 		
 	}

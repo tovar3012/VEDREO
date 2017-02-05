@@ -65,5 +65,18 @@
 	
 	require ROOT.'\kernel\Libs\ErrorHandler.php';;
 	 
+	define('PHP_FIREWALL_REQUEST_URI', strip_tags( $_SERVER['REQUEST_URI'] ) );
+	define('PHP_FIREWALL_ACTIVATION', true );
+
+	/*
+    |--------------------------------------------------------------------------
+    | Firewall
+    |--------------------------------------------------------------------------
+    |
+    | URL info: http://www.php-firewall.info
+    |
+    */
+
+	require ROOT.'\kernel\PHPFirewall\firewall.php';
 
 ?>
